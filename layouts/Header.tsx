@@ -4,10 +4,17 @@ import Sidebar from "@/components/Sidebar";
 import { NAV_MENU_DATA } from "@/constants/NavMenuData";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
+    const pathname = usePathname();
+    console.log(pathname);
     return (
-        <main className="w-full h-full bg-white sticky top-0 z-50">
+        <main
+            className={`${
+                pathname === "/studio" ? "hidden" : "block"
+            } w-full h-full bg-white sticky top-0 z-50`}
+        >
             <nav className="p-4 md:p-6 bg-white md:px-16 lg:max-w-7xl lg:mx-auto flex items-center justify-between">
                 <div>
                     <h1 className="text-2xl font-medium">
