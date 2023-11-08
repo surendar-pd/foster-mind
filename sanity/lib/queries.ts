@@ -16,3 +16,17 @@ export const postQuery = groq`*[_type == "post" && slug.current == $slug][0]{
 export const postPathsQuery = groq`*[_type == "post" && defined(slug.current)][]{
     "params": { "slug": slug.current }
 }`;
+// Get all countries
+export const countriesQuery = groq`*[_type == "country" && defined(slug.current)]{
+    _id, title, slug, "mainImage": mainImage.asset->url, "alt": mainImage.alt, body
+}`;
+
+// Get a single country by its slug
+export const countryQuery = groq`*[_type == "country" && slug.current == $slug][0]{ 
+    title, "mainImage": mainImage.asset->url, "alt": mainImage.alt, body
+}`;
+
+// Get all country slugs
+export const countryPathsQuery = groq`*[_type == "country" && defined(slug.current)][]{
+    "params": { "slug": slug.current }
+}`;

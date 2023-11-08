@@ -29,10 +29,10 @@ const About = () => {
     ];
 
     return (
-        <main className="w-full h-full">
+        <main id="about" className="w-full h-full">
             <main className="py-12 md:py-16 lg:py-32 w-full h-full p-4 md:px-16 lg:max-w-7xl lg:mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
                 <section className="flex flex-col gap-2 h-fit lg:sticky lg:top-28">
-                    <p className="text-blue-500 font-medium text-base md:text-lg lg:text-xl">
+                    <p className="text-teal-500 text-2xl md:text-3xl lg:text-4xl font-medium">
                         About
                     </p>
                     <h1 className="text-3xl md:text-4xl lg:text-5xl !leading-tight font-semibold">
@@ -57,12 +57,14 @@ const About = () => {
                         {about.map((a, idx) => (
                             <div
                                 key={idx}
-                                className="bg-slate-50 hover:-translate-y-1 transition-all duration-300 rounded-md p-6 flex flex-col gap-4"
+                                className="bg-teal-200 hover:-translate-y-1 transition-all duration-300 rounded-md p-6 flex flex-col gap-4"
                             >
                                 <h1 className="text-xl text-center font-semibold">
                                     {a.title}
                                 </h1>
-                                <p className="text-slate-500 text-justify md:text-center">{a.desc}</p>
+                                <p className="text-slate-800 text-justify md:text-center">
+                                    {a.desc}
+                                </p>
                             </div>
                         ))}
                     </div>

@@ -9,7 +9,7 @@ const builder = imageUrlBuilder(client);
 export default function Posts({ posts = [] }: { posts: SanityDocument[] }) {
     return (
         <>
-            <section className="bg-white pb-16 lg:pb-32 p-4 md:px-16 lg:max-w-7xl lg:mx-auto font-bold w-full h-full">
+            <section className="bg-white py-8 md:py-16 lg:py-32 p-4 md:px-16 lg:max-w-7xl lg:mx-auto font-bold w-full h-full">
                 <h1 className="text-2xl md:text-4xl font-medium mb-12">
                     Latest Updates
                 </h1>
