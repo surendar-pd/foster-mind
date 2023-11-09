@@ -3,18 +3,18 @@ import React from "react";
 
 const teamMembers = [
     {
-        name: "Hardik",
+        name: "Hardik Samariya",
         designation: "Co Founder",
         image: "/assets/team/person3.jpeg",
     },
     {
-        name: "Neelam",
+        name: "Neelam Samariya",
         designation: "Co Founder",
         image: "/assets/team/person4.jpeg",
     },
     {
-        name: "Sujata",
-        designation: "CFO",
+        name: "Sujata Behani",
+        designation: "CEO",
         image: "/assets/team/person2.jpeg",
     },
     {

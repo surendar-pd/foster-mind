@@ -16,14 +16,14 @@ export const NAV_MENU_DATA = [
 
 export const COUNTRIES = [
     {
-        title: "New Zeland",
-        href: "/country/new-zeland",
-        image: "/assets/ire.jpg",
+        title: "New Zealand",
+        href: "/country/new-zealand",
+        image: "/assets/nz.jpg",
     },
     {
         title: "Ireland",
         href: "/country/ireland",
-        image: "/assets/nz.jpg",
+        image: "/assets/ire.jpg",
     },
     {
         title: "UK",

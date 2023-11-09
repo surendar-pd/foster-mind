@@ -41,28 +41,31 @@ const Footer = () => {
                                 d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
                             />
                         </svg>
-                        <p className=" text-sm">903 Ten Square</p>
+                        <p className=" text-sm">
+                            903, Ten Square, Jiva Mahalaya Marg, Andheri East,
+                            Mumbai - 400069
+                        </p>
                     </div>
                     <div className="flex items-center gap-6">
                         <Link
                             target="_blank"
-                            href={"https://instagram.com/surendar_pd"}
+                            href={"https://instagram.com/fostermind_academy"}
                         >
                             <InstagramLogoIcon
                                 width={20}
                                 height={20}
+                                strokeWidth={1.5}
                                 className="hover:text-secondary transition-all duration-300"
                             />
                         </Link>
                         <Link
                             target="_blank"
-                            href={
-                                "https://www.facebook.com/in/surendar-pd-b725921b1/"
-                            }
+                            href={"https://www.facebook.com/fostermindacademy"}
                         >
                             <FacebookIcon
                                 width={20}
                                 height={20}
+                                strokeWidth={1.5}
                                 className="hover:text-secondary transition-all duration-300"
                             />
                         </Link>
