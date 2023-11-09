@@ -113,7 +113,7 @@ function Why() {
                         </div>
                     ))}
                 </div>
-                <p className="my-4 text-slate-500">
+                <p className="my-4 text-slate-500 text-justify">
                     In conclusion, studying abroad from India is an enriching
                     and transformative experience that equips you with a global
                     outlook, a top-tier education, and a competitive edge in the

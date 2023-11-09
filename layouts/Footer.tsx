@@ -8,6 +8,7 @@ import Link from "next/link";
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { NAV_MENU_DATA, COUNTRIES } from "@/constants/NavMenuData";
+import { FacebookIcon } from "lucide-react";
 
 const Footer = () => {
     return (
@@ -56,10 +57,10 @@ const Footer = () => {
                         <Link
                             target="_blank"
                             href={
-                                "https://www.linkedin.com/in/surendar-pd-b725921b1/"
+                                "https://www.facebook.com/in/surendar-pd-b725921b1/"
                             }
                         >
-                            <LinkedInLogoIcon
+                            <FacebookIcon
                                 width={20}
                                 height={20}
                                 className="hover:text-secondary transition-all duration-300"
@@ -94,7 +95,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="">
-                        <h1 className="font-medium mb-2">Conatact</h1>
+                        <h1 className="font-medium mb-2">Contact</h1>
                         <div className="flex flex-col">
                             <Link href="tel:+919820377327">
                                 <Button

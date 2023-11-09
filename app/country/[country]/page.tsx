@@ -10,7 +10,6 @@ import Country from "@/components/Landing/Country";
 export async function generateStaticParams() {
     // Important, use the plain Sanity Client here
     const countries = await client.fetch(countryPathsQuery);
-    console.log(countries)
     return countries;
 }
 

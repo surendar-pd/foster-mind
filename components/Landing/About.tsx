@@ -29,9 +29,9 @@ const About = () => {
     ];
 
     return (
-        <main id="about" className="w-full h-full">
+        <main id="about" className="w-full h-full scroll-mt-32">
             <main className="py-12 md:py-16 lg:py-32 w-full h-full p-4 md:px-16 lg:max-w-7xl lg:mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <section className="flex flex-col gap-2 h-fit lg:sticky lg:top-28">
+                <section className="flex flex-col gap-2 h-fit lg:sticky lg:top-32">
                     <p className="text-teal-500 text-2xl md:text-3xl lg:text-4xl font-medium">
                         About
                     </p>

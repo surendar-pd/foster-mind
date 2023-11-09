@@ -9,7 +9,6 @@ import Image from "next/image";
 
 const Header = () => {
     const pathname = usePathname();
-    console.log(pathname);
     return (
         <main
             className={`${

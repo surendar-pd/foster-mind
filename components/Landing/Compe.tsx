@@ -105,7 +105,7 @@ function Compe() {
                         </div>
                     ))}
                 </div>
-                <p className="my-4 text-slate-500">
+                <p className="my-4 text-slate-500 text-justify">
                     Our specialist counsellors, each with their unique areas of
                     expertise, offer extensive personal guidance on every aspect
                     of overseas education. From selecting schools, colleges, and

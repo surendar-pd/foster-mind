@@ -19,7 +19,6 @@ const Countries = ({ countries = [] }: { countries: SanityDocument[] }) => {
             </div>
             <div className="grid gap-4 grid-cols-1 md:grid-cols-3">
                 {countries.map((country) => {
-                    console.log(builder.image(country.mainImage).url(), "kkkk");
                     return (
                         <div
                             style={{
@@ -32,7 +31,7 @@ const Countries = ({ countries = [] }: { countries: SanityDocument[] }) => {
                         >
                             <Link
                                 className="bg-black/50 rounded-md p-8 lg:opacity-0 transition-all duration-300 lg:group-hover:opacity-100 w-full h-full flex justify-center items-center"
-                                href={`${country.slug.current}`}
+                                href={`/country/${country.slug.current}`}
                             >
                                 <h1 className="text-white text-2xl">
                                     {country.title}
