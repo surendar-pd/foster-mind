@@ -77,3 +77,23 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* .work-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.work-item {
+  grid-column: span 2;
+  background: #AB47BC;
+} */
+
+/* .work-item:last-child:nth-child(3n - 1) {
+  grid-column-end: -4;
+}
+.work-item:nth-last-child(2):nth-child(3n + 1) {
+  grid-column-end: 4;
+}
+.work-item:last-child:nth-child(3n - 2) {
+  grid-column-end: 5;
+} */

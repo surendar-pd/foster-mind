@@ -31,7 +31,7 @@ const WhatWeDo = () => {
     ];
     return (
         <main className="w-full h-full bg-teal-400">
-            <main className="py-8 md:py-16 lg:py-32 w-full p-4 md:px-16 lg:max-w-7xl lg:mx-auto flex flex-col gap-4">
+            <main className="py-8 md:py-16 lg:py-32 w-full p-4 md:px-16 lg:max-w-screen-2xl lg:mx-auto flex flex-col gap-4">
                 <section className="text-center max-w-3xl mx-auto">
                     <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold">
                         What we do
@@ -47,12 +47,13 @@ const WhatWeDo = () => {
                     </p>
                 </section>
                 <section>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8 mt-8">
+                    <div className="flex flex-wrap justify-center items-center gap-4 mt-8">
+                        {/* <div className="work-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8 mt-8"> */}
                         {data.map((d, idx) => (
                             <div
                                 key={idx}
                                 // lg:last:odd:col-start-2 lg:col-span-2
-                                className="bg-white  hover:-translate-y-1 transition-all duration-300 rounded-md p-6 flex flex-col gap-4"
+                                className="bg-white w-full self-stretch max-w-sm hover:-translate-y-1 transition-all duration-300 rounded-md p-6 flex flex-col gap-4"
                             >
                                 <div className="flex gap-2 items-center justify-center">
                                     {d.icon}

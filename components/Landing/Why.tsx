@@ -84,7 +84,7 @@ function Why() {
     ];
     return (
         <section>
-            <div className="w-full p-4 md:px-16 lg:max-w-7xl lg:mx-auto pb-8 md:pb-16 lg:pb-32">
+            <div className="w-full p-4 md:px-16 lg:max-w-screen-2xl lg:mx-auto pb-8 md:pb-16 lg:pb-32">
                 <div className="mx-auto flex flex-col gap-4 max-w-xl text-center">
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold">
                         Why study Abroad
@@ -96,10 +96,10 @@ function Why() {
                         study abroad.
                     </p>
                 </div>
-                <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <div className="mt-8 flex flex-wrap justify-center items-center gap-4">
                     {FEATURES.map((feat, idx) => (
                         <div
-                            className="block rounded-xl border bg-teal-400/80 border-white/10 p-8 shadow transition duration-300 hover:-translate-y-1"
+                            className="block rounded-xl self-stretch max-w-sm border bg-teal-400/80 border-white/10 p-8 shadow transition duration-300 hover:-translate-y-1"
                             key={idx}
                         >
                             <div className="flex gap-2 items-center justify-center">
@@ -113,7 +113,7 @@ function Why() {
                         </div>
                     ))}
                 </div>
-                <p className="my-4 text-slate-500 text-justify">
+                <p className="my-8 text-slate-500 text-justify">
                     In conclusion, studying abroad from India is an enriching
                     and transformative experience that equips you with a global
                     outlook, a top-tier education, and a competitive edge in the
