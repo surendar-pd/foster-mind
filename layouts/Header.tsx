@@ -50,8 +50,16 @@ const Header = () => {
                             <Link href={data.href}>{data.title}</Link>
                         </Button>
                     ))}
-                    <Button className="bg-teal-500 hover:bg-teal-600 p-4">
-                        Book Session
+                    <Button
+                        asChild
+                        className="bg-teal-500 hover:bg-teal-600 p-4"
+                    >
+                        <Link
+                            href={"https://calendly.com/fostermind/30min"}
+                            target="_blank"
+                        >
+                            Book Session
+                        </Link>
                     </Button>
                 </div>
                 <div className="lg:hidden">

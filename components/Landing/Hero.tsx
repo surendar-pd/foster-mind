@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { Button } from "../ui/button";
 import { Calendar } from "lucide-react";
+import Link from "next/link";
 
 const Hero = () => {
     return (
@@ -34,18 +35,25 @@ const Hero = () => {
                     or a parent with hopes, our platform is designed to be your
                     trusted guide.
                 </p>
-                <Button className="bg-teal-500 hover:bg-teal-600 py-6 px-4 md:w-fit">
-                    <Calendar className="mr-2" strokeWidth={1.5} size={20} />{" "}
-                    Book a free Counselling Session
+                <Button
+                    asChild
+                    className="bg-teal-500 hover:bg-teal-600 py-6 px-4 md:w-fit"
+                >
+                    <Link
+                        href={"https://calendly.com/fostermind/30min"}
+                        target="_blank"
+                    >
+                        <Calendar
+                            className="mr-2"
+                            strokeWidth={1.5}
+                            size={20}
+                        />{" "}
+                        Book a free Counselling Session
+                    </Link>
                 </Button>
             </div>
             <div>
-                <video
-                    className="w-full h-full"
-                    autoPlay
-                    muted
-                    loop
-                >
+                <video className="w-full h-full" autoPlay muted loop>
                     <source src={"/assets/herovid.mp4"} type="video/mp4" />
                 </video>
             </div>
