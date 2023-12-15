@@ -38,8 +38,17 @@ const Sidebar = () => {
                                     <Link href={data.href}>{data.title}</Link>
                                 </Button>
                             ))}
-                            <Button className="bg-teal-500 w-fit hover:bg-teal-600 py-6 px-4">
-                                Book Session
+                            <Button
+                                asChild
+                                className="bg-teal-500 hover:bg-teal-600 p-4"
+                            >
+                                <Link
+                                    href={"https://shorturl.at/tzJMZ"}
+                                    // href={"https://calendly.com/fostermind/30min"}
+                                    target="_blank"
+                                >
+                                    Book Session
+                                </Link>
                             </Button>
                         </section>
                     </SheetDescription>
